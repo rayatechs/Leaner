@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{vue,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        nunito: ['Nunito'],
+      },
+    },
   },
   plugins: [],
 }
