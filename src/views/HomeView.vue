@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <main>
+  <section>
     Hello World
-  </main>
+  </section>
 </template>
