@@ -18,7 +18,7 @@ import IconProject from './components/icons/IconProject.vue';
           <h4>Projects</h4>
         </div>
 
-        <div class="w-full h-full p-6 overflow-y-scroll">
+        <div class="w-full p-6 overflow-y-scroll h-[85%]">
           <RouterView />
         </div>
       </main>
