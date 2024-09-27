@@ -37,10 +37,16 @@ const name = computed(() => {
     <div class="flex flex-row w-full h-screen pr-6">
       <TheNavbar />
 
-      <main class="w-full bg-white rounded-t-2xl">
-        <div class="flex flex-row items-center justify-start w-full px-6 py-2 border-b">
-          <component :is="icons[name]" class="w-6 mr-2"></component>
-          <h4 class="text-sm font-bold">{{ name }}</h4>
+      <main class="relative w-full bg-white border rounded-t-2xl" id="content">
+        <div class="flex flex-row items-center justify-start w-full border-b">
+          <div class="flex flex-row items-center px-6 py-4">
+            <component :is="icons[name]" class="w-5 mr-2"></component>
+            <h4 class="text-sm font-bold">{{ name }}</h4>
+          </div>
+
+          <div class="flex flex-row ml-auto mr-4 space-x-2">
+            <button class="px-2 py-1 text-sm text-white bg-blue-500 rounded-lg">Merge Story</button>
+          </div>
         </div>
 
         <div class="w-full p-6 overflow-y-scroll h-[85%]">

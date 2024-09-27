@@ -12,7 +12,7 @@ const workspaceClicked = ref(false)
 </script>
 
 <template>
-    <header class="flex flex-row items-center p-6">
+    <header class="flex flex-row items-center px-6 py-2">
         <div class="ml-2 mr-14">
             <TheLogo />
         </div>
@@ -40,22 +40,26 @@ const workspaceClicked = ref(false)
             <h4 class="text-lg font-bold text-gray-500 ">Project</h4>
         </div>
 
-        <div class="flex flex-row items-center ml-auto space-x-2">
-            <div class="relative">
-                <input type="text" placeholder="Find Goods"
-                    class="py-2 pl-10 pr-4 text-sm font-medium bg-gray-200 rounded-lg focus:outline-none">
-                <IconSearch class="absolute w-6 top-1.5 left-2" />
-            </div>
+        <div class="relative mx-auto">
+            <input type="text" placeholder="Find Goods"
+                class="py-2 pl-10 pr-4 text-sm font-medium bg-gray-200 rounded-lg focus:outline-none">
+            <IconSearch class="absolute w-6 top-1.5 left-2" />
+        </div>
 
-            <button class="p-2 bg-gray-200 rounded-lg">
+        <div class="flex flex-row items-center space-x-2">
+            <button class="px-4 py-2 text-sm text-white bg-blue-500 rounded-lg hover:bg-blue-600">
+                Add New +
+            </button>
+
+            <button class="p-2 bg-gray-200 rounded-lg hover:bg-gray-300">
                 <IconBell class="w-5" />
             </button>
 
-            <button class="p-2 bg-gray-200 rounded-lg">
+            <button class="p-2 bg-gray-200 rounded-lg hover:bg-gray-300">
                 <IconUser class="w-5" />
             </button>
 
-            <button class="p-2 bg-gray-200 rounded-lg">
+            <button class="p-2 bg-gray-200 rounded-lg hover:bg-gray-300">
                 <IconMoon class="w-5" />
             </button>
         </div>

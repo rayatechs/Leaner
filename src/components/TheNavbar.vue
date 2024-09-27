@@ -14,9 +14,9 @@ import IconHome from '@/components/icons/IconHome.vue';
         <aside class="flex flex-col items-center my-4 border-r border-gray-300">
             <nav class="flex flex-col items-center justify-center px-4 mb-auto">
                 <RouterLink to="/"
-                    class="flex flex-col items-center justify-center w-full px-4 py-2 mt-1 rounded-2xl group hover:opacity-100 hover:bg-white">
+                    class="flex flex-col items-center justify-center w-full px-4 py-2 mt-1 bg-white rounded-2xl group hover:opacity-100">
                     <IconHome class="w-6 opacity-50 group-hover:opacity-100" />
-                    <span class="pt-2 text-sm font-bold text-gray-500 group-hover:text-black">Home</span>
+                    <span class="pt-2 text-sm font-bold text-black ">Home</span>
                 </RouterLink>
 
                 <RouterLink to="/board"
@@ -57,23 +57,30 @@ import IconHome from '@/components/icons/IconHome.vue';
 
         <aside class="p-4 space-y-6 rounded-xl w-60">
             <div class="flex flex-col items-center justify-center">
-                <h6 class="mb-2 text-xs text-gray-400">Not Started</h6>
-                <button class="w-full px-4 py-2 mb-2 text-left rounded-lg hover:bg-white">Refine</button>
-                <button class="w-full px-4 py-2 mb-2 text-left rounded-lg hover:bg-white">Design</button>
-                <button class="w-full px-4 py-2 mb-2 text-left rounded-lg hover:bg-white">To Do</button>
+                <h6 class="mb-2 text-xs text-gray-400">Status</h6>
+                <button class="w-full px-4 py-2 mb-2 text-left rounded-lg hover:bg-white">All</button>
+                <button class="w-full px-4 py-2 mb-2 text-left bg-white rounded-lg">Not Started</button>
+                <button class="w-full px-4 py-2 mb-2 text-left rounded-lg hover:bg-white">Active</button>
+                <button class="w-full px-4 py-2 mb-2 text-left rounded-lg hover:bg-white">Close</button>
             </div>
 
             <div class="flex flex-col items-center justify-center">
-                <h6 class="mb-2 text-xs text-gray-400">Active</h6>
-                <button class="w-full px-4 py-2 mb-2 text-left rounded-lg hover:bg-white">Doing</button>
-                <button class="w-full px-4 py-2 mb-2 text-left rounded-lg hover:bg-white">Build</button>
-                <button class="w-full px-4 py-2 mb-2 text-left rounded-lg hover:bg-white">Test</button>
+                <h6 class="mb-2 text-xs text-gray-400">Meetings</h6>
+                <button class="w-full px-4 py-2 mb-2 text-left rounded-lg hover:bg-white">All</button>
+                <button class="w-full px-4 py-2 mb-2 text-left rounded-lg hover:bg-white">Recorded</button>
+                <button class="w-full px-4 py-2 mb-2 text-left rounded-lg hover:bg-white">On Going</button>
             </div>
 
             <div class="flex flex-col items-center justify-center">
-                <h6 class="mb-2 text-xs text-gray-400">Close</h6>
-                <button class="w-full px-4 py-2 mb-2 text-left rounded-lg hover:bg-white">Deployed</button>
-                <button class="w-full px-4 py-2 mb-2 text-left rounded-lg hover:bg-white">Done</button>
+                <h6 class="mb-2 text-xs text-gray-400">Iterations</h6>
+                <button class="w-full px-4 py-2 mb-2 text-left rounded-lg hover:bg-white">Sprint</button>
+                <button class="w-full px-4 py-2 mb-2 text-left rounded-lg hover:bg-white">Milestone</button>
+            </div>
+
+            <div class="flex flex-col items-center justify-center">
+                <h6 class="mb-2 text-xs text-gray-400">Release</h6>
+                <button class="w-full px-4 py-2 mb-2 text-left rounded-lg hover:bg-white">Plan</button>
+                <button class="w-full px-4 py-2 mb-2 text-left rounded-lg hover:bg-white">Deadlines</button>
             </div>
         </aside>
     </div>
